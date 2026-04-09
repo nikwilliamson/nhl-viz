@@ -49,7 +49,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -319,7 +319,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -337,7 +337,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -355,7 +355,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -463,7 +463,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -1921,7 +1921,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -1939,7 +1939,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -1957,7 +1957,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -1993,7 +1993,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -2047,7 +2047,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -2065,7 +2065,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -3307,7 +3307,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -3325,7 +3325,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -3343,7 +3343,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -3361,7 +3361,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         }
       ]
@@ -4073,7 +4073,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -4145,7 +4145,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -4163,7 +4163,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -4289,7 +4289,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -4307,7 +4307,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -4343,7 +4343,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -4361,7 +4361,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -4379,7 +4379,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -4433,7 +4433,7 @@
           "conferenceRank": 9,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -4451,7 +4451,7 @@
           "conferenceRank": 9,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -4487,7 +4487,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -4505,7 +4505,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -4649,7 +4649,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -4667,7 +4667,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -4685,7 +4685,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -5189,7 +5189,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5207,7 +5207,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5225,7 +5225,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -5243,7 +5243,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -5261,7 +5261,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -5279,7 +5279,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5315,7 +5315,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5333,7 +5333,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5351,7 +5351,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5369,7 +5369,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5387,7 +5387,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5405,7 +5405,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5423,7 +5423,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5441,7 +5441,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5459,7 +5459,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5477,7 +5477,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5495,7 +5495,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -5513,7 +5513,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5531,7 +5531,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5549,7 +5549,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5567,7 +5567,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5585,7 +5585,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5603,7 +5603,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5621,7 +5621,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5639,7 +5639,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5657,7 +5657,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5675,7 +5675,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5693,7 +5693,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5711,7 +5711,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5729,7 +5729,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5747,7 +5747,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5765,7 +5765,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5783,7 +5783,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5801,7 +5801,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5819,7 +5819,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5837,7 +5837,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5855,7 +5855,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5873,7 +5873,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5891,7 +5891,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5909,7 +5909,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5927,7 +5927,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5945,7 +5945,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -5963,7 +5963,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -6269,7 +6269,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -6323,7 +6323,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6341,7 +6341,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6359,7 +6359,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6377,7 +6377,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6395,7 +6395,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6413,7 +6413,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6431,7 +6431,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6449,7 +6449,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6467,7 +6467,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6485,7 +6485,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6503,7 +6503,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6521,7 +6521,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6539,7 +6539,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6557,7 +6557,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6575,7 +6575,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6593,7 +6593,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6611,7 +6611,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6629,7 +6629,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6647,7 +6647,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6665,7 +6665,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6683,7 +6683,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6701,7 +6701,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -6719,7 +6719,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         }
       ]
@@ -6765,7 +6765,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -7053,7 +7053,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -8457,7 +8457,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8475,7 +8475,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8493,7 +8493,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -8529,7 +8529,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8547,7 +8547,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8565,7 +8565,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8583,7 +8583,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -8601,7 +8601,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -8619,7 +8619,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -8637,7 +8637,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8655,7 +8655,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8673,7 +8673,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8691,7 +8691,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8835,7 +8835,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8853,7 +8853,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -8871,7 +8871,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8907,7 +8907,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8925,7 +8925,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8943,7 +8943,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8961,7 +8961,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8979,7 +8979,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -8997,7 +8997,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9015,7 +9015,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9033,7 +9033,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9051,7 +9051,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9069,7 +9069,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9087,7 +9087,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9105,7 +9105,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9123,7 +9123,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9141,7 +9141,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9159,7 +9159,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9177,7 +9177,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9195,7 +9195,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9213,7 +9213,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9231,7 +9231,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9249,7 +9249,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9267,7 +9267,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -9303,7 +9303,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -10123,7 +10123,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -10555,7 +10555,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -13481,7 +13481,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -13859,7 +13859,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -13931,7 +13931,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -16397,7 +16397,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -16415,7 +16415,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -16433,7 +16433,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -16451,7 +16451,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -16469,7 +16469,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -16505,7 +16505,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -16523,7 +16523,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -16541,7 +16541,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -20431,7 +20431,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -20449,7 +20449,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -20467,7 +20467,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -20485,7 +20485,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -20503,7 +20503,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -20737,7 +20737,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -20809,7 +20809,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -20827,7 +20827,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -20935,7 +20935,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -20953,7 +20953,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -26913,7 +26913,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -27237,7 +27237,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27255,7 +27255,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27273,7 +27273,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27291,7 +27291,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27309,7 +27309,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27327,7 +27327,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27345,7 +27345,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27363,7 +27363,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27399,7 +27399,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27417,7 +27417,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27435,7 +27435,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -27453,7 +27453,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -30523,7 +30523,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -30541,7 +30541,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -30559,7 +30559,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -30577,7 +30577,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -30595,7 +30595,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -30613,7 +30613,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -31261,7 +31261,7 @@
           "conferenceRank": 9,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -31387,7 +31387,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -32791,7 +32791,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -32845,7 +32845,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -32971,7 +32971,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -33025,7 +33025,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -33043,7 +33043,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -33079,7 +33079,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -33133,7 +33133,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -33187,7 +33187,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -33205,7 +33205,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -33629,7 +33629,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -33719,7 +33719,7 @@
           "conferenceRank": 9,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -33773,7 +33773,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -34061,7 +34061,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -34079,7 +34079,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -34259,7 +34259,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -35771,7 +35771,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35789,7 +35789,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35807,7 +35807,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35825,7 +35825,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35843,7 +35843,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35861,7 +35861,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35879,7 +35879,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35897,7 +35897,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35915,7 +35915,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35933,7 +35933,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35951,7 +35951,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35969,7 +35969,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -35987,7 +35987,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36005,7 +36005,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36023,7 +36023,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36041,7 +36041,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36059,7 +36059,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36077,7 +36077,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36095,7 +36095,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36113,7 +36113,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36131,7 +36131,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36149,7 +36149,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36185,7 +36185,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36203,7 +36203,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36221,7 +36221,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36257,7 +36257,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36275,7 +36275,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36293,7 +36293,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36311,7 +36311,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36329,7 +36329,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36347,7 +36347,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36365,7 +36365,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36383,7 +36383,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36401,7 +36401,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36419,7 +36419,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36437,7 +36437,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36455,7 +36455,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36491,7 +36491,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36545,7 +36545,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36563,7 +36563,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36581,7 +36581,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36599,7 +36599,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36617,7 +36617,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -36635,7 +36635,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36653,7 +36653,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -36887,7 +36887,7 @@
           "conferenceRank": 5,
           "divisionRank": 1,
           "wildcardSequence": 0,
-          "wildcardRank": 5,
+          "wildcardRank": 4,
           "clinchIndicator": null
         },
         {
@@ -37113,7 +37113,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -37221,7 +37221,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -37239,7 +37239,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -37257,7 +37257,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -37293,7 +37293,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -37311,7 +37311,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -37365,7 +37365,7 @@
           "conferenceRank": 9,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -38283,7 +38283,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -38949,7 +38949,7 @@
           "conferenceRank": 8,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 8,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -40669,7 +40669,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -40687,7 +40687,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -40705,7 +40705,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -40723,7 +40723,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -40741,7 +40741,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -40759,7 +40759,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -40975,7 +40975,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -41083,7 +41083,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -41101,7 +41101,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -41119,7 +41119,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -43703,7 +43703,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -43793,7 +43793,7 @@
           "conferenceRank": 7,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 7,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -47079,7 +47079,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -47097,7 +47097,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -47241,7 +47241,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -47259,7 +47259,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -47295,7 +47295,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -47349,7 +47349,7 @@
           "conferenceRank": 5,
           "divisionRank": 1,
           "wildcardSequence": 0,
-          "wildcardRank": 5,
+          "wildcardRank": 4,
           "clinchIndicator": null
         },
         {
@@ -47745,7 +47745,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -47799,7 +47799,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -47817,7 +47817,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -47979,7 +47979,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -47997,7 +47997,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -48015,7 +48015,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -48033,7 +48033,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -48069,7 +48069,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -48087,7 +48087,7 @@
           "conferenceRank": 10,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 10,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -48105,7 +48105,7 @@
           "conferenceRank": 10,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 10,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -48123,7 +48123,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -48141,7 +48141,7 @@
           "conferenceRank": 9,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -48267,7 +48267,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -48285,7 +48285,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -48339,7 +48339,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -48357,7 +48357,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -49005,7 +49005,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49023,7 +49023,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49041,7 +49041,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49059,7 +49059,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49077,7 +49077,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49095,7 +49095,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49113,7 +49113,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49185,7 +49185,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49617,7 +49617,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49671,7 +49671,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49689,7 +49689,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49707,7 +49707,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49725,7 +49725,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49743,7 +49743,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49779,7 +49779,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -49797,7 +49797,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -50545,7 +50545,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -51427,7 +51427,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -51445,7 +51445,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -51463,7 +51463,7 @@
           "conferenceRank": 7,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 7,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -53921,7 +53921,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -54083,7 +54083,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -57405,7 +57405,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -57423,7 +57423,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -57801,7 +57801,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -57819,7 +57819,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -57873,7 +57873,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -57891,7 +57891,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -58017,7 +58017,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -58035,7 +58035,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -58053,7 +58053,7 @@
           "conferenceRank": 8,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 8,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -58125,7 +58125,7 @@
           "conferenceRank": 7,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 7,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -58143,7 +58143,7 @@
           "conferenceRank": 8,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 8,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -58161,7 +58161,7 @@
           "conferenceRank": 7,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 7,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -58179,7 +58179,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -58431,7 +58431,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -58953,7 +58953,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -58971,7 +58971,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -59007,7 +59007,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -59025,7 +59025,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59043,7 +59043,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59061,7 +59061,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59079,7 +59079,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59097,7 +59097,7 @@
           "conferenceRank": 9,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59115,7 +59115,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59133,7 +59133,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59151,7 +59151,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59169,7 +59169,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59187,7 +59187,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59205,7 +59205,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59223,7 +59223,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59241,7 +59241,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59259,7 +59259,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59277,7 +59277,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59295,7 +59295,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59313,7 +59313,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59331,7 +59331,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59349,7 +59349,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59367,7 +59367,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59385,7 +59385,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59403,7 +59403,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59421,7 +59421,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59439,7 +59439,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59457,7 +59457,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59475,7 +59475,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59493,7 +59493,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59511,7 +59511,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59529,7 +59529,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59547,7 +59547,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59565,7 +59565,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59583,7 +59583,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59601,7 +59601,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59619,7 +59619,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59637,7 +59637,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59655,7 +59655,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59673,7 +59673,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59691,7 +59691,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59709,7 +59709,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59745,7 +59745,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59763,7 +59763,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59781,7 +59781,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59799,7 +59799,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59817,7 +59817,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59835,7 +59835,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -59853,7 +59853,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59871,7 +59871,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59889,7 +59889,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59907,7 +59907,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59943,7 +59943,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -59997,7 +59997,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -60213,7 +60213,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -60231,7 +60231,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -60249,7 +60249,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -60267,7 +60267,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -60285,7 +60285,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -60303,7 +60303,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -60321,7 +60321,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -60339,7 +60339,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -60511,7 +60511,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -60529,7 +60529,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -60925,7 +60925,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -61177,7 +61177,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -61519,7 +61519,7 @@
           "conferenceRank": 8,
           "divisionRank": 7,
           "wildcardSequence": 4,
-          "wildcardRank": 8,
+          "wildcardRank": 10,
           "clinchIndicator": null
         },
         {
@@ -61537,7 +61537,7 @@
           "conferenceRank": 8,
           "divisionRank": 7,
           "wildcardSequence": 4,
-          "wildcardRank": 8,
+          "wildcardRank": 10,
           "clinchIndicator": null
         },
         {
@@ -61573,7 +61573,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -63869,7 +63869,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -63887,7 +63887,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -64193,7 +64193,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -64247,7 +64247,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -64265,7 +64265,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -64283,7 +64283,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -64517,7 +64517,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -64535,7 +64535,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -64625,7 +64625,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -64769,7 +64769,7 @@
           "conferenceRank": 9,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -64841,7 +64841,7 @@
           "conferenceRank": 8,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -64859,7 +64859,7 @@
           "conferenceRank": 9,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -67073,7 +67073,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -67091,7 +67091,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -67109,7 +67109,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -67127,7 +67127,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -67145,7 +67145,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -67163,7 +67163,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         }
       ]
@@ -67569,7 +67569,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -67587,7 +67587,7 @@
           "conferenceRank": 8,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 8,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -67605,7 +67605,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -67623,7 +67623,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -68127,7 +68127,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -68163,7 +68163,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -68181,7 +68181,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -68199,7 +68199,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -68235,7 +68235,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -68253,7 +68253,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -68271,7 +68271,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -68289,7 +68289,7 @@
           "conferenceRank": 8,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 8,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -68325,7 +68325,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -68415,7 +68415,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -68433,7 +68433,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -68487,7 +68487,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -68505,7 +68505,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -68523,7 +68523,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -68541,7 +68541,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -68901,7 +68901,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -68919,7 +68919,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -68937,7 +68937,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -70431,7 +70431,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -70449,7 +70449,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -70467,7 +70467,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -70485,7 +70485,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -70503,7 +70503,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -70521,7 +70521,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         }
       ]
@@ -70711,7 +70711,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -70729,7 +70729,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -70747,7 +70747,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -71341,7 +71341,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -71359,7 +71359,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -71485,7 +71485,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -71503,7 +71503,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -71521,7 +71521,7 @@
           "conferenceRank": 7,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 7,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -71539,7 +71539,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -71557,7 +71557,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -71575,7 +71575,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -71629,7 +71629,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -71647,7 +71647,7 @@
           "conferenceRank": 4,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 4,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -71665,7 +71665,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -71683,7 +71683,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -72349,7 +72349,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -72367,7 +72367,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -72385,7 +72385,7 @@
           "conferenceRank": 9,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -72403,7 +72403,7 @@
           "conferenceRank": 9,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 9,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -72421,7 +72421,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -72439,7 +72439,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -72457,7 +72457,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72475,7 +72475,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72493,7 +72493,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72511,7 +72511,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72565,7 +72565,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72583,7 +72583,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72601,7 +72601,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72619,7 +72619,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72655,7 +72655,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72673,7 +72673,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72691,7 +72691,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -72709,7 +72709,7 @@
           "conferenceRank": 7,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73087,7 +73087,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73123,7 +73123,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73141,7 +73141,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73231,7 +73231,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73249,7 +73249,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73267,7 +73267,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -73285,7 +73285,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73303,7 +73303,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73537,7 +73537,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73555,7 +73555,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73573,7 +73573,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -73591,7 +73591,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -73609,7 +73609,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73627,7 +73627,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73645,7 +73645,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -73663,7 +73663,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -73681,7 +73681,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73699,7 +73699,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73717,7 +73717,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73735,7 +73735,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -73753,7 +73753,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -74159,7 +74159,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -74177,7 +74177,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -74195,7 +74195,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -74213,7 +74213,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -74285,7 +74285,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -74303,7 +74303,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -74321,7 +74321,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -74357,7 +74357,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -74411,7 +74411,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -74429,7 +74429,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -74447,7 +74447,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -74465,7 +74465,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -74501,7 +74501,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -74519,7 +74519,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -74537,7 +74537,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -75707,7 +75707,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -75725,7 +75725,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -75743,7 +75743,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -75761,7 +75761,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -75959,7 +75959,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -75977,7 +75977,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76031,7 +76031,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76067,7 +76067,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76085,7 +76085,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76103,7 +76103,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76121,7 +76121,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76139,7 +76139,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76157,7 +76157,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76175,7 +76175,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76193,7 +76193,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76211,7 +76211,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76229,7 +76229,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76247,7 +76247,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76265,7 +76265,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76283,7 +76283,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76301,7 +76301,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76319,7 +76319,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76337,7 +76337,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76355,7 +76355,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76373,7 +76373,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76391,7 +76391,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76409,7 +76409,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -76427,7 +76427,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -79137,7 +79137,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -80731,7 +80731,7 @@
           "conferenceRank": 6,
           "divisionRank": 5,
           "wildcardSequence": 2,
-          "wildcardRank": 6,
+          "wildcardRank": 8,
           "clinchIndicator": null
         },
         {
@@ -84449,7 +84449,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -84773,7 +84773,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -84791,7 +84791,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -85079,7 +85079,7 @@
           "conferenceRank": 5,
           "divisionRank": 1,
           "wildcardSequence": 0,
-          "wildcardRank": 5,
+          "wildcardRank": 4,
           "clinchIndicator": null
         },
         {
@@ -85097,7 +85097,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -85241,7 +85241,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -85259,7 +85259,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -85313,7 +85313,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -85331,7 +85331,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -87501,7 +87501,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -87519,7 +87519,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -87537,7 +87537,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -87555,7 +87555,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -87573,7 +87573,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -87717,7 +87717,7 @@
           "conferenceRank": 8,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -89085,7 +89085,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -89175,7 +89175,7 @@
           "conferenceRank": 8,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 8,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -89193,7 +89193,7 @@
           "conferenceRank": 8,
           "divisionRank": 6,
           "wildcardSequence": 3,
-          "wildcardRank": 8,
+          "wildcardRank": 9,
           "clinchIndicator": null
         },
         {
@@ -90877,7 +90877,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -90895,7 +90895,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -91345,7 +91345,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92497,7 +92497,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92515,7 +92515,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92533,7 +92533,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92551,7 +92551,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92569,7 +92569,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92587,7 +92587,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92605,7 +92605,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92623,7 +92623,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92659,7 +92659,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92713,7 +92713,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92731,7 +92731,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92749,7 +92749,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92767,7 +92767,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92821,7 +92821,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92857,7 +92857,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92875,7 +92875,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92893,7 +92893,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92911,7 +92911,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92929,7 +92929,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92947,7 +92947,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92965,7 +92965,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -92983,7 +92983,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93001,7 +93001,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93019,7 +93019,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93037,7 +93037,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93055,7 +93055,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93073,7 +93073,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93091,7 +93091,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93109,7 +93109,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93127,7 +93127,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93145,7 +93145,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93163,7 +93163,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93181,7 +93181,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93199,7 +93199,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93217,7 +93217,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93235,7 +93235,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93271,7 +93271,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93289,7 +93289,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93307,7 +93307,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93343,7 +93343,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93361,7 +93361,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93379,7 +93379,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93397,7 +93397,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93415,7 +93415,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93433,7 +93433,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93451,7 +93451,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93469,7 +93469,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93487,7 +93487,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93505,7 +93505,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93523,7 +93523,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93541,7 +93541,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93577,7 +93577,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93595,7 +93595,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93613,7 +93613,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93631,7 +93631,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93649,7 +93649,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93667,7 +93667,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93685,7 +93685,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93703,7 +93703,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93721,7 +93721,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93739,7 +93739,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93757,7 +93757,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93775,7 +93775,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93793,7 +93793,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93811,7 +93811,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93829,7 +93829,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93847,7 +93847,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93865,7 +93865,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93883,7 +93883,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93901,7 +93901,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93919,7 +93919,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93937,7 +93937,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93955,7 +93955,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93973,7 +93973,7 @@
           "conferenceRank": 4,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 4,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -93991,7 +93991,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -94009,7 +94009,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -94027,7 +94027,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         }
       ]
@@ -94235,7 +94235,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -94253,7 +94253,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -97521,7 +97521,7 @@
           "conferenceRank": 8,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 8,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -98025,7 +98025,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -98169,7 +98169,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -98187,7 +98187,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100131,7 +100131,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100149,7 +100149,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100167,7 +100167,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100185,7 +100185,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100203,7 +100203,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100221,7 +100221,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100239,7 +100239,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100311,7 +100311,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100329,7 +100329,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100347,7 +100347,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100365,7 +100365,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100383,7 +100383,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100401,7 +100401,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100419,7 +100419,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100437,7 +100437,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100455,7 +100455,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100473,7 +100473,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100491,7 +100491,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100509,7 +100509,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100527,7 +100527,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100545,7 +100545,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100563,7 +100563,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100581,7 +100581,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100599,7 +100599,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100617,7 +100617,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100635,7 +100635,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100653,7 +100653,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100671,7 +100671,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -100689,7 +100689,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100707,7 +100707,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100725,7 +100725,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         },
         {
@@ -100743,7 +100743,7 @@
           "conferenceRank": 6,
           "divisionRank": 2,
           "wildcardSequence": 0,
-          "wildcardRank": 6,
+          "wildcardRank": 5,
           "clinchIndicator": null
         }
       ]
@@ -100879,7 +100879,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -101365,7 +101365,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -101383,7 +101383,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -101563,7 +101563,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
@@ -104345,7 +104345,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -104363,7 +104363,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -104381,7 +104381,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -104399,7 +104399,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -104417,7 +104417,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -104435,7 +104435,7 @@
           "conferenceRank": 4,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 4,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -104453,7 +104453,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -104471,7 +104471,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -104489,7 +104489,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -104507,7 +104507,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -104525,7 +104525,7 @@
           "conferenceRank": 6,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 6,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -105083,7 +105083,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -105389,7 +105389,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -105407,7 +105407,7 @@
           "conferenceRank": 5,
           "divisionRank": 4,
           "wildcardSequence": 1,
-          "wildcardRank": 5,
+          "wildcardRank": 7,
           "clinchIndicator": null
         },
         {
@@ -105911,7 +105911,7 @@
           "conferenceRank": 7,
           "divisionRank": 3,
           "wildcardSequence": 0,
-          "wildcardRank": 7,
+          "wildcardRank": 6,
           "clinchIndicator": null
         },
         {
