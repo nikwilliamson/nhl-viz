@@ -267,6 +267,8 @@ export function StandingsViz() {
             hoveredTeam={hoveredTeam}
             onHighlight={handleHighlight}
             rankField={rankField}
+            dateRange={dateRange}
+            allDates={allDates}
           />
         </div>
       </div>

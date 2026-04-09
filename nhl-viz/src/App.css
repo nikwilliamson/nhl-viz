@@ -26,16 +26,16 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  overflow: hidden;
 }
 
 .chart-header {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-bottom: 1px solid #e8e8e8;
   flex-shrink: 0;
+  overflow-x: auto;
 }
 
 .content-row {
@@ -44,21 +44,42 @@ html, body, #root {
   min-height: 0;
 }
 
+@media (max-width: 600px) {
+  .content-row {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .chart-pane {
+    flex-shrink: 0;
+  }
+
+  .table-pane {
+    width: 100vw;
+    border-left: none;
+    border-top: 1px solid #e8e8e8;
+    overflow-y: visible;
+  }
+}
+
 .chart-pane {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 16px 16px 16px 20px;
+  padding: 0px 0px 0px 0px;
   min-width: 0;
+  min-height: 80vh;
 }
 
 .table-pane {
-  width: 320px;
+  min-width: 320px;
   flex-shrink: 0;
   border-left: 1px solid #e8e8e8;
   overflow-y: auto;
+  overflow-x: hidden;
   padding-bottom: 24px;
 }
+
 
 .chart-title {
   font-size: 12px;
@@ -110,6 +131,7 @@ html, body, #root {
   cursor: pointer;
   border-radius: 4px;
   transition: color 0.15s;
+  white-space: nowrap;
 }
 
 .tabs-item.selected .tabs-btn {
@@ -127,6 +149,7 @@ html, body, #root {
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 16px;
   min-height: 0;
 }
 
@@ -143,10 +166,8 @@ html, body, #root {
 }
 
 .chart-stack-label {
-  position: absolute;
-  top: 6px;
-  left: 48px;
-  font-size: 9px;
+  padding: 8px 16px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -177,6 +198,7 @@ html, body, #root {
   cursor: pointer;
   border-radius: 4px;
   transition: color 0.15s;
+  white-space: nowrap;
 }
 
 .date-preset-btn:hover {
@@ -196,6 +218,7 @@ html, body, #root {
 
 /* ── Standings table ────────────────────────────────────── */
 .standings-table {
+  width: 100%;
   padding: 16px 0;
 }
 
@@ -244,9 +267,11 @@ html, body, #root {
 /* ── Team row ───────────────────────────────────────────── */
 .team-row {
   display: grid;
-  grid-template-columns: 28px 22px 36px 1fr 28px 32px;
+  grid-template-columns: 28px 22px 36px auto 28px 32px;
   align-items: center;
   gap: 2px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 3px 16px 3px 12px;
   transition: background 0.1s;
   cursor: default;
@@ -308,6 +333,17 @@ html, body, #root {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
+
+.team-rank-delta {
+  font-size: 10px;
+  font-weight: 600;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.delta-up   { color: #22a050; }
+.delta-down { color: #d94f4f; }
+.delta-flat { color: #ccc; }
 
 /* ── Timeline brush strip ───────────────────────────────── */
 .timeline-brush-strip {

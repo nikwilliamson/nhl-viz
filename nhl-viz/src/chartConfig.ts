@@ -4,6 +4,25 @@
 
 export const chartConfig = {
 
+  // Chart margins (left must match across bump, line, and brush for x-axis alignment)
+  margin: {
+    bump:  { top: 8, right: 32, left: 32, bottomAxis: 24, bottomNoAxis: 8 },
+    line:  { top: 8, right: 32, left: 32, bottomAxis: 24, bottomNoAxis: 8 },
+    brush: { left: 32, right: 32 },
+  },
+
+  // Team logo dimensions (used in BumpChart)
+  logo: {
+    size: 24,
+    gap:  4,
+  },
+
+  // Timeline brush dimensions
+  brush: {
+    height:  16,
+    tickGap: 4,
+  },
+
   // Line stroke widths
   line: {
     widthDefault:     2,
@@ -25,8 +44,8 @@ export const chartConfig = {
 
   // Scrubber dot radii
   dot: {
-    radiusDefault:     5,
-    radiusHighlighted: 5,
+    radiusDefault:     8,
+    radiusHighlighted: 8,
     radiusDimmed:      2,
   },
 

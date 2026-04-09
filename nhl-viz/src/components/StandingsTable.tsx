@@ -11,6 +11,8 @@ interface Props {
   hoveredTeam: string | null;
   onHighlight: (triCode: string | null) => void;
   rankField: RankField;
+  dateRange: [string, string];
+  allDates: string[];
 }
 
 interface TeamRow {
@@ -23,7 +25,7 @@ interface TeamRow {
   snap: DayPoint;
 }
 
-export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam, onHighlight, rankField }: Props) {
+export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam, onHighlight, rankField, dateRange, allDates }: Props) {
   const rows = useMemo<TeamRow[]>(() => {
     return teams
       .map(t => {
@@ -32,6 +34,22 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam,
       })
       .filter(r => r.snap != null);
   }, [teams, scrubDate]);
+
+  const showRankDelta = useMemo(() => {
+    if (!allDates.length || !dateRange[0] || scrubDate === dateRange[0]) return false;
+    const firstMs = new Date(allDates[0] + 'T12:00:00Z').getTime();
+    const startMs = new Date(dateRange[0] + 'T12:00:00Z').getTime();
+    return (startMs - firstMs) > 7 * 24 * 60 * 60 * 1000;
+  }, [allDates, dateRange, scrubDate]);
+
+  const startSnaps = useMemo(() => {
+    const map = new Map<string, DayPoint>();
+    teams.forEach(t => {
+      const s = t.data.find(d => d.date === dateRange[0]) ?? t.data[0];
+      if (s) map.set(t.triCode, s);
+    });
+    return map;
+  }, [teams, dateRange]);
 
   // Compute global playoff set (used by all views)
   const inPlayoffsSet = useMemo(() => {
@@ -74,6 +92,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam,
               isEliminated={!inPlayoffsSet.has(row.triCode)}
               isHighlighted={highlightedTeam === row.triCode}
               isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
+              rankDelta={showRankDelta ? getRankDelta(startSnaps.get(row.triCode), row.snap, rankField) : undefined}
               onClick={() => onHighlight(row.triCode)}
             />
           ))}
@@ -114,6 +133,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam,
                         isHighlighted={highlightedTeam === row.triCode}
                         isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
                         showPlayoffLine={i === 2}
+                        rankDelta={showRankDelta ? getRankDelta(startSnaps.get(row.triCode), row.snap, rankField) : undefined}
                         onClick={() => onHighlight(row.triCode)}
                       />
                     );
@@ -152,6 +172,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam,
                     isHighlighted={highlightedTeam === row.triCode}
                     isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
                     showPlayoffLine={i === 7}
+                    rankDelta={showRankDelta ? getRankDelta(startSnaps.get(row.triCode), row.snap, rankField) : undefined}
                     onClick={() => onHighlight(row.triCode)}
                   />
                 );
@@ -207,6 +228,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam,
                       inPlayoffs={inPlayoffsSet.has(row.triCode)}
                       isHighlighted={highlightedTeam === row.triCode}
                       isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
+                      rankDelta={showRankDelta ? getRankDelta(startSnaps.get(row.triCode), row.snap, rankField) : undefined}
                       onClick={() => onHighlight(row.triCode)}
                     />
                   ))}
@@ -231,6 +253,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam,
                     isHighlighted={highlightedTeam === row.triCode}
                     isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
                     showPlayoffLine={i === 1}
+                    rankDelta={showRankDelta ? getRankDelta(startSnaps.get(row.triCode), row.snap, rankField) : undefined}
                     onClick={() => onHighlight(row.triCode)}
                   />
                 );
@@ -245,7 +268,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam,
 
 function TeamRowItem({
   row, rankLabel, inPlayoffs, isWildcard = false, isEliminated = false,
-  isHighlighted, isDimmed = false, showPlayoffLine = false, onClick,
+  isHighlighted, isDimmed = false, showPlayoffLine = false, rankDelta, onClick,
 }: {
   row: TeamRow;
   rankLabel: string;
@@ -255,6 +278,7 @@ function TeamRowItem({
   isHighlighted: boolean;
   isDimmed?: boolean;
   showPlayoffLine?: boolean;
+  rankDelta?: number;
   onClick: () => void;
 }) {
   const { snap, triCode, name } = row;
@@ -271,6 +295,7 @@ function TeamRowItem({
           isEliminated   ? 'team-row--eliminated' : '',
           inPlayoffs     ? 'team-row--playoff'    : '',
           isHighlighted  ? 'team-row--highlighted': '',
+          rankDelta !== undefined ? 'team-row--has-delta' : '',
         ].filter(Boolean).join(' ')}
         style={isDimmed ? { opacity: 0.72 } : undefined}
         onClick={onClick}
@@ -287,10 +312,24 @@ function TeamRowItem({
         <span className="team-abbrev" style={{ color }}>{triCode}</span>
         <span className="team-record">{record}</span>
         <span className="team-pts">{snap.points}</span>
+        {rankDelta !== undefined && (
+          <span className={`team-rank-delta ${rankDelta > 0 ? 'delta-up' : rankDelta < 0 ? 'delta-down' : 'delta-flat'}`}>
+            {rankDelta > 0 ? `+${rankDelta}` : rankDelta < 0 ? `${rankDelta}` : '–'}
+          </span>
+        )}
       </div>
       {showPlayoffLine && <div className="playoff-line" />}
     </>
   );
+}
+
+function getRankDelta(startSnap: DayPoint | undefined, currentSnap: DayPoint, rf: RankField): number {
+  if (!startSnap) return 0;
+  const get = (s: DayPoint): number => rf === 'wildcardRank' ? s.wildcardRank : (s as unknown as Record<string, number>)[rf];
+  const start = get(startSnap);
+  const cur = get(currentSnap);
+  if (!start || !cur) return 0;
+  return start - cur; // positive = moved up (lower rank number is better)
 }
 
 function formatDate(dateStr: string): string {

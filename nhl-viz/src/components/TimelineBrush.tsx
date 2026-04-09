@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
+import { chartConfig as C } from '../chartConfig';
 
 interface Props {
   dates: string[];
@@ -8,10 +9,10 @@ interface Props {
   onScrub?: (date: string) => void;
 }
 
-// Must match BumpChart / LineChart MARGIN_BASE so x-axes align
-const MARGIN = { left: 44, right: 24 };
-const BRUSH_H = 16; // height of the interactive brush track
-const TICK_GAP = 4; // gap between brush bottom and tick top
+// Margins sourced from chartConfig to stay aligned with BumpChart / LineChart x-axes
+const MARGIN   = C.margin.brush;
+const BRUSH_H  = C.brush.height;
+const TICK_GAP = C.brush.tickGap;
 
 const parseDate = (s: string) => new Date(s + 'T12:00:00Z');
 
