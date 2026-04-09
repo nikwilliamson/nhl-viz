@@ -1,46 +1,17 @@
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef, useCallback, useState } from 'react';
 import * as d3 from 'd3';
 import { teamStyles } from '../teamStyles';
 import { chartConfig as C } from '../chartConfig';
 import type { TeamSeries, DayPoint } from './StandingsViz';
 
-interface Segment {
-  inPlayoffs: boolean;
-  points: DayPoint[];
-}
-
-function getSegments(data: DayPoint[]): Segment[] {
-  if (data.length === 0) return [];
-  const segments: Segment[] = [];
-  const isIn = (pt: DayPoint) => pt.conferenceRank > 0 && pt.conferenceRank <= 8;
-  let current: Segment = { inPlayoffs: isIn(data[0]), points: [data[0]] };
-  for (let i = 1; i < data.length; i++) {
-    const pt = data[i];
-    const status = isIn(pt);
-    if (status !== current.inPlayoffs) {
-      current.points.push(pt); // share transition point for smooth join
-      segments.push(current);
-      current = { inPlayoffs: status, points: [pt] };
-    } else {
-      current.points.push(pt);
-    }
-  }
-  segments.push(current);
-  return segments;
-}
-
-export type RankField = 'leagueRank' | 'conferenceRank' | 'divisionRank';
-
-export const RANK_LABELS: Record<RankField, string> = {
-  leagueRank:     'League',
-  conferenceRank: 'Conference',
-  divisionRank:   'Division',
-};
+import type { RankField } from './rankField';
+export type { RankField };
 
 const RANK_MAX: Record<RankField, number> = {
   leagueRank:     32,
   conferenceRank: 16,
   divisionRank:   8,
+  wildcardRank:   16,
 };
 
 interface Props {
@@ -49,22 +20,37 @@ interface Props {
   highlightedTeam: string | null;
   rankField: RankField;
   onScrub: (date: string) => void;
+  onHighlight: (triCode: string | null) => void;
+  onHover: (triCode: string | null) => void;
   showXAxis?: boolean;
+  dateRange: [string, string];
 }
 
-const MARGIN_BASE = { top: 20, right: 24, left: 44 };
+const MARGIN_BASE = { top: 20, right: 30, left: 44 };
+const LOGO_SIZE = 18;
+const LOGO_GAP  = 4;
 
-export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScrub, showXAxis = true }: Props) {
+export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScrub, onHighlight, onHover, showXAxis = true, dateRange }: Props) {
   const svgRef = useRef<SVGSVGElement>(null);
+  const [drawKey, setDrawKey] = useState(0);
   const clipId = useRef(`bc-clip-${Math.random().toString(36).slice(2, 8)}`).current;
   const scrubRef = useRef<string>(scrubDate);
   const onScrubRef = useRef(onScrub);
+  const onHighlightRef = useRef(onHighlight);
+  const onHoverRef = useRef(onHover);
   const highlightedTeamRef = useRef<string | null>(highlightedTeam);
   const rankFieldRef = useRef<RankField>(rankField);
+  const prevHoveredTeamRef = useRef<string | null>(null);
   onScrubRef.current = onScrub;
+  onHighlightRef.current = onHighlight;
+  onHoverRef.current = onHover;
 
   const xScaleRef = useRef<d3.ScaleTime<number, number> | null>(null);
   const yScaleRef = useRef<d3.ScaleLinear<number, number> | null>(null);
+  const xAxisGroupRef = useRef<SVGGElement | null>(null);
+  const linesGRef = useRef<SVGGElement | null>(null);
+  const logosGRef = useRef<SVGGElement | null>(null);
+  const visibleDatesRef = useRef<string[]>([]);
 
   const allDates = useCallback(() => {
     const set = new Set<string>();
@@ -73,6 +59,19 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
   }, [teams]);
 
   const parseDate = (s: string) => new Date(s + 'T12:00:00Z');
+
+  // ── Redraw on container resize ───────────────────────────────────────────
+  useEffect(() => {
+    const el = svgRef.current;
+    if (!el) return;
+    let frame: number;
+    const ro = new ResizeObserver(() => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => setDrawKey(k => k + 1));
+    });
+    ro.observe(el);
+    return () => { ro.disconnect(); cancelAnimationFrame(frame); };
+  }, []);
 
   // ── Draw ────────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -92,25 +91,30 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
     const height = H - MARGIN.top - MARGIN.bottom;
 
     const dates = allDates();
+    const rangeStart = dateRange[0] || dates[0];
+    const rangeEnd   = dateRange[1] || dates[dates.length - 1];
 
     const xScale = d3.scaleTime()
-      .domain([parseDate(dates[0]), parseDate(dates[dates.length - 1])])
+      .domain([parseDate(rangeStart), parseDate(rangeEnd)])
       .range([0, width]);
     xScaleRef.current = xScale;
 
     const maxRank = RANK_MAX[rankField];
+
     const yScale = d3.scaleLinear()
       .domain([1, maxRank])
       .range([0, height]);
     yScaleRef.current = yScale;
 
+    // Visible dates for this range
+    visibleDatesRef.current = dates.filter(d => d >= rangeStart && d <= rangeEnd);
+
     // Clip path
     svg.append('defs').append('clipPath')
       .attr('id', clipId)
       .append('rect')
-      .attr('class', 'clip-rect')
       .attr('x', 0).attr('y', -10)
-      .attr('width', scrubRef.current ? xScale(parseDate(scrubRef.current)) : 0)
+      .attr('width', width)
       .attr('height', height + 20);
 
     const g = svg.append('g').attr('transform', `translate(${MARGIN.left},${MARGIN.top})`);
@@ -135,7 +139,7 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
 
     // X axis (only on bottom chart)
     if (showXAxis) {
-      g.append('g')
+      const xAxisG = g.append('g')
         .attr('transform', `translate(0,${height})`)
         .call(
           d3.axisBottom(xScale)
@@ -145,6 +149,9 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
         .call(ax => ax.select('.domain').remove())
         .call(ax => ax.selectAll('line').attr('stroke', C.color.axisTickLine))
         .call(ax => ax.selectAll('text').attr('fill', C.color.axisText).attr('font-size', C.fontSize.axisText));
+      xAxisGroupRef.current = xAxisG.node();
+    } else {
+      xAxisGroupRef.current = null;
     }
 
     // Y axis
@@ -157,56 +164,52 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
       .call(ax => ax.selectAll('line').attr('stroke', 'none'))
       .call(ax => ax.selectAll('text').attr('fill', C.color.yAxisTextBump).attr('font-size', C.fontSize.yAxisTextBump));
 
-    // Lines
-    const line = d3.line<{ date: string } & Record<string, number>>()
-      .x(d => xScale(parseDate(d.date)))
-      .y(d => yScale(d[rankField]))
-      .defined(d => d[rankField] != null && d[rankField] > 0)
-      .curve(d3.curveMonotoneX);
-
     const linesG = g.append('g')
       .attr('class', 'lines')
       .attr('clip-path', `url(#${clipId})`);
+    linesGRef.current = linesG.node();
+
+    const logosG = g.append('g').attr('class', 'team-end-logos');
+    logosGRef.current = logosG.node();
 
     teams.forEach(team => {
       const color = teamStyles[team.triCode]?.primaryColor ?? C.color.teamFallback;
       const baseOpacity = highlightedTeamRef.current
-        ? (highlightedTeamRef.current === team.triCode ? C.opacity.lineHighlighted : C.opacity.lineDimmed) : C.opacity.lineDefault;
-      const segments = getSegments(team.data);
+        ? (highlightedTeamRef.current === team.triCode ? C.opacity.lineHighlighted : C.opacity.lineDimmed)
+        : C.opacity.lineDefault;
+
+      const getY = (pt: DayPoint): number | null => {
+        const r = rankField === 'wildcardRank'
+          ? pt.wildcardRank
+          : (pt as unknown as Record<string, number>)[rankField];
+        return r > 0 ? r : null;
+      };
+
+      const line = d3.line<DayPoint>()
+        .x(d => xScale(parseDate(d.date)))
+        .y(d => yScale(getY(d) ?? 0))
+        .defined(d => getY(d) != null)
+        .curve(d3.curveLinear);
 
       const teamG = linesG.append('g')
-        .attr('class', `team-group team-group-${team.triCode}`)
-        .style('cursor', 'pointer')
-        .on('mouseenter', function () {
-          if (highlightedTeamRef.current) return;
-          linesG.selectAll('.line').attr('opacity', C.opacity.lineDimmed).attr('stroke-width', C.line.widthDimmed);
-          linesG.selectAll('.bump-dot').attr('opacity', C.opacity.lineDimmed);
-          linesG.selectAll(`.line-${team.triCode}`).attr('opacity', C.opacity.lineHighlighted).attr('stroke-width', C.line.widthHighlighted);
-          linesG.selectAll(`.bump-dot-${team.triCode}`).attr('opacity', C.opacity.lineHighlighted);
-          d3.select(this).raise();
-        })
-        .on('mouseleave', function () {
-          if (highlightedTeamRef.current) return;
-          linesG.selectAll('.line').attr('opacity', C.opacity.lineDefault).attr('stroke-width', C.line.widthDefault);
-          linesG.selectAll('.bump-dot').attr('opacity', C.opacity.lineDefault);
-        });
+        .attr('class', `team-group team-group-${team.triCode}`);
 
-      segments.forEach(seg => {
-        teamG.append('path')
-          .datum(seg.points as (typeof team.data[0] & Record<string, number>)[])
-          .attr('class', `line line-${team.triCode}`)
-          .attr('fill', 'none').attr('stroke', color)
-          .attr('stroke-width', C.line.widthDefault)
-          .attr('opacity', baseOpacity)
-          .attr('stroke-dasharray', seg.inPlayoffs ? null : C.dash.nonPlayoffLine)
-          .attr('d', line as d3.ValueFn<SVGPathElement, unknown, string>);
-      });
+      // Bind richer datum so the dateRange effect can regenerate the path
+      teamG.append('path')
+        .datum({ data: team.data, triCode: team.triCode })
+        .attr('class', `line line-${team.triCode}`)
+        .attr('fill', 'none')
+        .attr('stroke', color)
+        .attr('stroke-width', C.line.widthDefault)
+        .attr('opacity', baseOpacity)
+        .attr('d', ({ data }) => line(data) ?? '');
 
-      // Per-day dots
+      // Per-day dots — bind the date string as datum for cx updates
       team.data.forEach(pt => {
-        const rank = (pt as unknown as Record<string, number>)[rankField];
-        if (!rank || rank <= 0) return;
+        const rank = getY(pt);
+        if (rank == null) return;
         teamG.append('circle')
+          .datum(pt.date)
           .attr('class', `bump-dot bump-dot-${team.triCode}`)
           .attr('cx', xScale(parseDate(pt.date)))
           .attr('cy', yScale(rank))
@@ -214,6 +217,24 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
           .attr('fill', color)
           .attr('opacity', baseOpacity);
       });
+
+      // Logo at right end of line — bind triCode as datum for y updates
+      const visibleData = team.data.filter(d => d.date >= rangeStart && d.date <= rangeEnd);
+      if (visibleData.length > 0) {
+        const lastPt = visibleData[visibleData.length - 1];
+        const rank = getY(lastPt);
+        if (rank != null) {
+          logosG.append('image')
+            .datum(team.triCode)
+            .attr('class', `team-end-logo team-end-logo-${team.triCode}`)
+            .attr('href', `${import.meta.env.BASE_URL}img/${team.triCode}/${team.triCode}_light.svg`)
+            .attr('x', width + LOGO_GAP)
+            .attr('y', yScale(rank) - LOGO_SIZE / 2)
+            .attr('width', LOGO_SIZE)
+            .attr('height', LOGO_SIZE)
+            .attr('opacity', baseOpacity);
+        }
+      }
     });
 
     // Scrubber
@@ -226,24 +247,174 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
       .attr('fill', C.color.scrubberLabelBump).attr('font-size', C.fontSize.scrubberLabelBump);
     scrubG.append('g').attr('class', 'scrub-dots');
 
-    // Mouse overlay
+    // Mouse overlay — scrubbing (mousemove) + team select (click)
+    // Uses refs so handlers stay correct after brush range changes
+    const rankStep = height / Math.max(maxRank - 1, 1);
+    const clickThreshold = rankStep * 0.6;
+
     g.append('rect')
       .attr('width', width).attr('height', height)
       .attr('fill', 'transparent')
       .on('mousemove', function (event) {
-        const [mx] = d3.pointer(event);
-        const nearest = dates.reduce((best, d) => {
-          const bd = Math.abs(parseDate(best).getTime() - xScale.invert(mx).getTime());
-          const cd = Math.abs(parseDate(d).getTime()   - xScale.invert(mx).getTime());
-          return cd < bd ? d : best;
-        });
+        const [mx, my] = d3.pointer(event);
+        const target = xScaleRef.current!.invert(mx).getTime();
+        const nearest = visibleDatesRef.current.reduce((best, d) =>
+          Math.abs(parseDate(d).getTime() - target) < Math.abs(parseDate(best).getTime() - target) ? d : best
+        );
         onScrubRef.current(nearest);
+
+        const rf = rankFieldRef.current;
+        let closestTeam: string | null = null;
+        let minDist = rankStep / 2;
+        teams.forEach(team => {
+          const pt = team.data.find(d => d.date === nearest);
+          if (!pt) return;
+          const rank = rf === 'wildcardRank'
+            ? pt.wildcardRank
+            : (pt as unknown as Record<string, number>)[rf];
+          if (!rank) return;
+          const dist = Math.abs(my - yScaleRef.current!(rank));
+          if (dist < minDist) { minDist = dist; closestTeam = team.triCode; }
+        });
+        // When a team is pinned, raise hovered non-pinned line to 0.32
+        if (highlightedTeamRef.current) {
+          const ht = d3.transition().duration(120).ease(d3.easeCubicOut);
+          const linesG = d3.select(svgRef.current!).select('.lines');
+          const logosG = d3.select(svgRef.current!).select('.team-end-logos');
+          const prev = prevHoveredTeamRef.current;
+          if (prev && prev !== closestTeam && prev !== highlightedTeamRef.current) {
+            linesG.selectAll(`.line-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
+            linesG.selectAll(`.bump-dot-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
+            logosG.selectAll(`.team-end-logo-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
+          }
+          if (closestTeam && closestTeam !== highlightedTeamRef.current) {
+            linesG.selectAll(`.line-${closestTeam}`).transition(ht).attr('opacity', C.opacity.lineHoverActive);
+            linesG.selectAll(`.bump-dot-${closestTeam}`).transition(ht).attr('opacity', C.opacity.lineHoverActive);
+            logosG.selectAll(`.team-end-logo-${closestTeam}`).transition(ht).attr('opacity', C.opacity.lineHoverActive);
+          }
+          prevHoveredTeamRef.current = closestTeam;
+        }
+
+        onHoverRef.current(closestTeam);
+      })
+      .on('mouseleave', function () {
+        if (highlightedTeamRef.current) {
+          const prev = prevHoveredTeamRef.current;
+          if (prev && prev !== highlightedTeamRef.current) {
+            const ht = d3.transition().duration(120).ease(d3.easeCubicOut);
+            const linesG = d3.select(svgRef.current!).select('.lines');
+            const logosG = d3.select(svgRef.current!).select('.team-end-logos');
+            linesG.selectAll(`.line-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
+            linesG.selectAll(`.bump-dot-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
+            logosG.selectAll(`.team-end-logo-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
+          }
+          prevHoveredTeamRef.current = null;
+        }
+        onHoverRef.current(null);
+      })
+      .on('click', function (event) {
+        const [mx, my] = d3.pointer(event);
+        const target = xScaleRef.current!.invert(mx).getTime();
+        const nearest = visibleDatesRef.current.reduce((best, d) =>
+          Math.abs(parseDate(d).getTime() - target) < Math.abs(parseDate(best).getTime() - target) ? d : best
+        );
+        const rf = rankFieldRef.current;
+        let closestTeam: string | null = null;
+        let minDist = clickThreshold;
+        teams.forEach(team => {
+          const pt = team.data.find(d => d.date === nearest);
+          if (!pt) return;
+          const rank = rf === 'wildcardRank'
+            ? pt.wildcardRank
+            : (pt as unknown as Record<string, number>)[rf];
+          if (!rank) return;
+          const dist = Math.abs(my - yScaleRef.current!(rank));
+          if (dist < minDist) { minDist = dist; closestTeam = team.triCode; }
+        });
+        onHighlightRef.current(closestTeam);
       });
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [teams, rankField, showXAxis]);
+  }, [teams, rankField, showXAxis, drawKey]);
 
-  // ── Update scrubber + clip rect ─────────────────────────────────────────
+  // ── Animate date range changes ───────────────────────────────────────────
+  useEffect(() => {
+    if (!svgRef.current || !xScaleRef.current || !linesGRef.current) return;
+
+    const dates = allDates();
+    const rangeStart = dateRange[0] || dates[0];
+    const rangeEnd   = dateRange[1] || dates[dates.length - 1];
+
+    visibleDatesRef.current = dates.filter(d => d >= rangeStart && d <= rangeEnd);
+    xScaleRef.current.domain([parseDate(rangeStart), parseDate(rangeEnd)]);
+
+    const t = d3.transition().duration(450).ease(d3.easeCubicInOut);
+
+    if (showXAxis && xAxisGroupRef.current) {
+      d3.select(xAxisGroupRef.current).transition(t)
+        .call(
+          d3.axisBottom(xScaleRef.current)
+            .ticks(d3.timeMonth.every(1))
+            .tickFormat(d => d3.timeFormat('%b')(d as Date))
+        )
+        .call(ax => ax.select('.domain').remove())
+        .call(ax => ax.selectAll('line').attr('stroke', C.color.axisTickLine))
+        .call(ax => ax.selectAll('text').attr('fill', C.color.axisText).attr('font-size', C.fontSize.axisText));
+    }
+
+    const rf = rankFieldRef.current;
+
+    // Transition line paths
+    d3.select(linesGRef.current)
+      .selectAll<SVGPathElement, { data: DayPoint[]; triCode: string }>('.line')
+      .transition(t)
+      .attr('d', ({ data }) => {
+        const lineGen = d3.line<DayPoint>()
+          .x(d => xScaleRef.current!(parseDate(d.date)))
+          .y(d => {
+            const rank = rf === 'wildcardRank'
+              ? d.wildcardRank
+              : (d as unknown as Record<string, number>)[rf];
+            return yScaleRef.current!(rank ?? 0);
+          })
+          .defined(d => {
+            const rank = rf === 'wildcardRank'
+              ? d.wildcardRank
+              : (d as unknown as Record<string, number>)[rf];
+            return rank > 0;
+          })
+          .curve(d3.curveLinear);
+        return lineGen(data) ?? '';
+      });
+
+    // Transition dot cx positions
+    d3.select(linesGRef.current)
+      .selectAll<SVGCircleElement, string>('.bump-dot')
+      .transition(t)
+      .attr('cx', date => xScaleRef.current!(parseDate(date)));
+
+    // Transition logo y positions
+    if (logosGRef.current) {
+      d3.select(logosGRef.current)
+        .selectAll<SVGImageElement, string>('.team-end-logo')
+        .transition(t)
+        .attr('y', triCode => {
+          const team = teams.find(tm => tm.triCode === triCode);
+          if (!team) return 0;
+          const visibleData = team.data.filter(d => d.date >= rangeStart && d.date <= rangeEnd);
+          if (!visibleData.length) return 0;
+          const lastPt = visibleData[visibleData.length - 1];
+          const rank = rf === 'wildcardRank'
+            ? lastPt.wildcardRank
+            : (lastPt as unknown as Record<string, number>)[rf];
+          return rank ? yScaleRef.current!(rank) - LOGO_SIZE / 2 : 0;
+        });
+    }
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dateRange[0], dateRange[1]]);
+
+  // ── Update scrubber position ─────────────────────────────────────────────
   useEffect(() => {
     if (!svgRef.current || !scrubDate || !xScaleRef.current || !yScaleRef.current) return;
     scrubRef.current = scrubDate;
@@ -253,17 +424,19 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
     const rf = rankFieldRef.current;
     const svg = d3.select(svgRef.current);
 
-    svg.select(`#${clipId} .clip-rect`).attr('width', x);
     svg.select('.scrub-line').attr('x1', x).attr('x2', x);
     svg.select('.scrub-label').attr('x', x).text(d3.timeFormat('%b %d, %Y')(parseDate(scrubDate)));
 
     const dotsG = svg.select('.scrub-dots');
     dotsG.selectAll('*').remove();
     const hl = highlightedTeamRef.current;
+
     teams.forEach(team => {
       const pt = team.data.find(d => d.date === scrubDate);
       if (!pt) return;
-      const rank = (pt as unknown as Record<string, number>)[rf];
+      const rank = rf === 'wildcardRank'
+        ? pt.wildcardRank
+        : (pt as unknown as Record<string, number>)[rf];
       if (!rank) return;
       const color = teamStyles[team.triCode]?.primaryColor ?? C.color.teamFallback;
       dotsG.append('circle')
@@ -272,7 +445,8 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
         .attr('fill', color)
         .attr('opacity', hl ? (hl === team.triCode ? C.opacity.dotHighlighted : C.opacity.dotDimmed) : C.opacity.dotDefault);
     });
-  }, [scrubDate, teams]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scrubDate, teams, dateRange[0], dateRange[1]]);
 
   // ── Highlight ───────────────────────────────────────────────────────────
   useEffect(() => {
@@ -280,15 +454,20 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
     if (!svgRef.current) return;
 
     const linesG = d3.select(svgRef.current).select('.lines');
+    const logosG = d3.select(svgRef.current).select('.team-end-logos');
+    const t = d3.transition().duration(180).ease(d3.easeCubicOut);
     if (highlightedTeam) {
-      linesG.selectAll('.line').attr('opacity', C.opacity.lineDimmed).attr('stroke-width', C.line.widthDimmed);
-      linesG.selectAll('.bump-dot').attr('opacity', C.opacity.lineDimmed);
-      linesG.selectAll(`.line-${highlightedTeam}`).attr('opacity', C.opacity.lineHighlighted).attr('stroke-width', C.line.widthHighlighted);
-      linesG.selectAll(`.bump-dot-${highlightedTeam}`).attr('opacity', C.opacity.lineHighlighted);
+      linesG.selectAll('.line').transition(t).attr('opacity', C.opacity.lineDimmed).attr('stroke-width', C.line.widthDimmed);
+      linesG.selectAll('.bump-dot').transition(t).attr('opacity', C.opacity.lineDimmed);
+      linesG.selectAll(`.line-${highlightedTeam}`).transition(t).attr('opacity', C.opacity.lineHighlighted).attr('stroke-width', C.line.widthHighlighted);
+      linesG.selectAll(`.bump-dot-${highlightedTeam}`).transition(t).attr('opacity', C.opacity.lineHighlighted);
       linesG.select(`.team-group-${highlightedTeam}`).raise();
+      logosG.selectAll('.team-end-logo').transition(t).attr('opacity', C.opacity.lineDimmed);
+      logosG.selectAll(`.team-end-logo-${highlightedTeam}`).transition(t).attr('opacity', C.opacity.lineHighlighted);
     } else {
-      linesG.selectAll('.line').attr('opacity', C.opacity.lineDefault).attr('stroke-width', C.line.widthDefault);
-      linesG.selectAll('.bump-dot').attr('opacity', C.opacity.lineDefault);
+      linesG.selectAll('.line').transition(t).attr('opacity', C.opacity.lineDefault).attr('stroke-width', C.line.widthDefault);
+      linesG.selectAll('.bump-dot').transition(t).attr('opacity', C.opacity.lineDefault);
+      logosG.selectAll('.team-end-logo').transition(t).attr('opacity', C.opacity.lineDefault);
     }
 
     if (!scrubRef.current || !xScaleRef.current || !yScaleRef.current) return;
@@ -300,7 +479,9 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
     teams.forEach(team => {
       const pt = team.data.find(d => d.date === scrubRef.current);
       if (!pt) return;
-      const rank = (pt as unknown as Record<string, number>)[rf];
+      const rank = rf === 'wildcardRank'
+        ? pt.wildcardRank
+        : (pt as unknown as Record<string, number>)[rf];
       if (!rank) return;
       const color = teamStyles[team.triCode]?.primaryColor ?? C.color.teamFallback;
       dotsG.append('circle')

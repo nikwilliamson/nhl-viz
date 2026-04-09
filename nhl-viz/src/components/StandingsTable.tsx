@@ -1,14 +1,14 @@
 import { useMemo } from 'react';
 import { teamStyles } from '../teamStyles';
 import type { TeamSeries, DayPoint } from './StandingsViz';
-import type { RankField } from './BumpChart';
+import type { RankField } from './rankField';
 
-const DIVISION_ORDER = ['Atlantic', 'Metropolitan', 'Central', 'Pacific'];
 
 interface Props {
   teams: TeamSeries[];
   scrubDate: string;
   highlightedTeam: string | null;
+  hoveredTeam: string | null;
   onHighlight: (triCode: string | null) => void;
   rankField: RankField;
 }
@@ -23,7 +23,7 @@ interface TeamRow {
   snap: DayPoint;
 }
 
-export function StandingsTable({ teams, scrubDate, highlightedTeam, onHighlight, rankField }: Props) {
+export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam, onHighlight, rankField }: Props) {
   const rows = useMemo<TeamRow[]>(() => {
     return teams
       .map(t => {
@@ -73,6 +73,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, onHighlight,
               inPlayoffs={inPlayoffsSet.has(row.triCode)}
               isEliminated={!inPlayoffsSet.has(row.triCode)}
               isHighlighted={highlightedTeam === row.triCode}
+              isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
               onClick={() => onHighlight(row.triCode)}
             />
           ))}
@@ -81,30 +82,76 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, onHighlight,
     );
   }
 
-  // Division view: 4 division sections in canonical order
+  // Division view: conferences as headers, divisions nested within
   if (rankField === 'divisionRank') {
+    const CONFERENCE_ORDER = ['Eastern', 'Western'] as const;
+    const CONF_DIVISIONS: Record<string, string[]> = {
+      Eastern: ['Atlantic', 'Metropolitan'],
+      Western: ['Central', 'Pacific'],
+    };
     return (
       <div className="standings-table">
         <div className="standings-date">{formatDate(scrubDate)}</div>
-        {DIVISION_ORDER.map(div => {
-          const divRows = rows
-            .filter(r => r.division === div)
-            .sort((a, b) => a.snap.divisionRank - b.snap.divisionRank || b.snap.points - a.snap.points);
+        {CONFERENCE_ORDER.map(conf => (
+          <div key={conf} className="conf-section">
+            <div className="conf-header">{conf} Conference</div>
+            {CONF_DIVISIONS[conf].map(div => {
+              const divRows = rows
+                .filter(r => r.division === div)
+                .sort((a, b) => a.snap.divisionRank - b.snap.divisionRank || b.snap.points - a.snap.points);
+              return (
+                <div key={div} className="division-section">
+                  <div className="division-header">{div}</div>
+                  {divRows.map((row, i) => {
+                    const inPlayoffs = inPlayoffsSet.has(row.triCode);
+                    return (
+                      <TeamRowItem
+                        key={row.triCode}
+                        row={row}
+                        rankLabel={`${i + 1}`}
+                        inPlayoffs={inPlayoffs}
+                        isEliminated={!inPlayoffs}
+                        isHighlighted={highlightedTeam === row.triCode}
+                        isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
+                        showPlayoffLine={i === 2}
+                        onClick={() => onHighlight(row.triCode)}
+                      />
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  // Conference view: flat ranked list per conference, playoff line after position 8
+  if (rankField === 'conferenceRank') {
+    const conferences = ['Eastern', 'Western'] as const;
+    return (
+      <div className="standings-table">
+        <div className="standings-date">{formatDate(scrubDate)}</div>
+        {conferences.map(conf => {
+          const confRows = rows
+            .filter(r => r.conference === conf)
+            .sort((a, b) => a.snap.conferenceRank - b.snap.conferenceRank || b.snap.points - a.snap.points);
           return (
-            <div key={div} className="conf-section">
-              <div className="conf-header">{div}</div>
-              {divRows.map((row, i) => {
+            <div key={conf} className="conf-section">
+              <div className="conf-header">{conf} Conference</div>
+              {confRows.map((row, i) => {
                 const inPlayoffs = inPlayoffsSet.has(row.triCode);
-                const isDivLeader = i < 3;
                 return (
                   <TeamRowItem
                     key={row.triCode}
                     row={row}
-                    rankLabel={isDivLeader ? `${i + 1}` : '–'}
+                    rankLabel={`${i + 1}`}
                     inPlayoffs={inPlayoffs}
                     isEliminated={!inPlayoffs}
                     isHighlighted={highlightedTeam === row.triCode}
-                    showPlayoffLine={i === 2}
+                    isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
+                    showPlayoffLine={i === 7}
                     onClick={() => onHighlight(row.triCode)}
                   />
                 );
@@ -116,7 +163,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, onHighlight,
     );
   }
 
-  // Conference view: division leaders + wildcard, sorted by seed position then points
+  // Wild Card view: top 3 per division under division headers, rest in Wild Card section
   const conferences = ['Eastern', 'Western'] as const;
 
   return (
@@ -163,6 +210,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, onHighlight,
                       rankLabel={`${i + 1}`}
                       inPlayoffs={true}
                       isHighlighted={highlightedTeam === row.triCode}
+                      isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
                       onClick={() => onHighlight(row.triCode)}
                     />
                   ))}
@@ -184,6 +232,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, onHighlight,
                     isWildcard={isWC}
                     isEliminated={!confInPlayoffs.has(row.triCode)}
                     isHighlighted={highlightedTeam === row.triCode}
+                    isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
                     showPlayoffLine={i === 1}
                     onClick={() => onHighlight(row.triCode)}
                   />
@@ -199,7 +248,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, onHighlight,
 
 function TeamRowItem({
   row, rankLabel, inPlayoffs, isWildcard = false, isEliminated = false,
-  isHighlighted, showPlayoffLine = false, onClick,
+  isHighlighted, isDimmed = false, showPlayoffLine = false, onClick,
 }: {
   row: TeamRow;
   rankLabel: string;
@@ -207,6 +256,7 @@ function TeamRowItem({
   isWildcard?: boolean;
   isEliminated?: boolean;
   isHighlighted: boolean;
+  isDimmed?: boolean;
   showPlayoffLine?: boolean;
   onClick: () => void;
 }) {
@@ -214,7 +264,6 @@ function TeamRowItem({
   const style = teamStyles[triCode];
   const color = style?.primaryColor ?? '#888';
   const record = `${snap.wins}-${snap.losses}-${snap.otLosses}`;
-  const diff = snap.goalDiff > 0 ? `+${snap.goalDiff}` : `${snap.goalDiff}`;
 
   return (
     <>
@@ -226,6 +275,7 @@ function TeamRowItem({
           inPlayoffs     ? 'team-row--playoff'    : '',
           isHighlighted  ? 'team-row--highlighted': '',
         ].filter(Boolean).join(' ')}
+        style={isDimmed ? { opacity: 0.72 } : undefined}
         onClick={onClick}
         title={`Click to ${isHighlighted ? 'deselect' : 'highlight'} ${name}`}
       >
@@ -240,9 +290,6 @@ function TeamRowItem({
         <span className="team-abbrev" style={{ color }}>{triCode}</span>
         <span className="team-record">{record}</span>
         <span className="team-pts">{snap.points}</span>
-        <span className={`team-diff ${snap.goalDiff > 0 ? 'pos' : snap.goalDiff < 0 ? 'neg' : ''}`}>
-          {snap.gp > 0 ? diff : '—'}
-        </span>
       </div>
       {showPlayoffLine && <div className="playoff-line" />}
     </>

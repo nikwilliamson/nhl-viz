@@ -13,13 +13,14 @@ export const chartConfig = {
 
   // Line opacity states
   opacity: {
-    lineDefault:     0.72,
+    lineDefault:     0.75,
     lineHighlighted: 1,
-    lineDimmed:      0.48,
-    scrubberLine:    0.2,
+    lineDimmed:      0.12,
+    lineHoverActive: 0.32,
+    scrubberLine:    0.25,
     dotDefault:      0.85,
     dotHighlighted:  1,
-    dotDimmed:       0.15,
+    dotDimmed:       0.1,
   },
 
   // Scrubber dot radii
@@ -39,41 +40,36 @@ export const chartConfig = {
   // Colors
   color: {
     // Axes
-    axisTickLine:      '#2a2d35',
+    axisTickLine:      '#e8e8e8',
     axisText:          '#bbb',
 
     // Grid
-    gridLineChart:     '#1e2028',  // LineChart y-axis grid
-    gridBumpChart:     '#1a1c24',  // BumpChart horizontal grid
+    gridLineChart:     '#f0f0f0',  // LineChart y-axis grid
+    gridBumpChart:     '#f0f0f0',  // BumpChart horizontal grid
 
     // Y-axis labels
-    yAxisTextLine:     '#444',     // LineChart y-axis tick labels
-    yAxisLabelLine:    '#3a3d4a',  // LineChart "Points" label
-    yAxisTextBump:     '#3a3d4a',  // BumpChart y-axis tick labels
+    yAxisTextLine:     '#ccc',     // LineChart y-axis tick labels
+    yAxisLabelLine:    '#ccc',     // LineChart "Points" label
+    yAxisTextBump:     '#ccc',     // BumpChart y-axis tick labels
 
     // Scrubber
-    scrubberLine:      '#fff',
-    scrubberLabelLine: '#666',     // LineChart date label
-    scrubberLabelBump: '#444',     // BumpChart date label
+    scrubberLine:      '#333',
+    scrubberLabelLine: '#999',     // LineChart date label
+    scrubberLabelBump: '#999',     // BumpChart date label
 
     // Playoff cutoff line (BumpChart)
-    playoffCutoff:     '#1e3a1e',
+    playoffCutoff:     '#d4ecd4',
 
     // Fallback when team color is missing
-    teamFallback:      '#666',
-  },
-
-  // Playback
-  playback: {
-    intervalMs: 250,  // delay between days when clicking play
+    teamFallback:      '#ccc',
   },
 
   // Font sizes
   fontSize: {
-    axisText:         '11px',
-    yAxisLabelLine:   '11px',
-    yAxisTextBump:    '10px',
-    scrubberLabelBump:'10px',
+    axisText:          '11px',
+    yAxisLabelLine:    '11px',
+    yAxisTextBump:     '10px',
+    scrubberLabelBump: '10px',
   },
 
 } as const;
