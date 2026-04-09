@@ -14,7 +14,6 @@ interface Props {
 }
 
 
-const MARGIN_BASE = { top: 24, right: 24, left: 44 };
 
 export function LineChart({ teams, scrubDate, highlightedTeam, onScrub, showXAxis = true, dateRange }: Props) {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -56,7 +55,8 @@ export function LineChart({ teams, scrubDate, highlightedTeam, onScrub, showXAxi
   useEffect(() => {
     if (!svgRef.current || teams.length === 0) return;
 
-    const MARGIN = { ...MARGIN_BASE, bottom: showXAxis ? 40 : 8 };
+    const m = C.margin.line;
+    const MARGIN = { top: m.top, right: m.right, left: m.left, bottom: showXAxis ? m.bottomAxis : m.bottomNoAxis };
 
     const svg = d3.select(svgRef.current);
     svg.selectAll('*').remove();
@@ -146,7 +146,7 @@ export function LineChart({ teams, scrubDate, highlightedTeam, onScrub, showXAxi
       const teamG = linesG.append('g')
         .attr('class', `team-group team-group-${team.triCode}`)
         .style('cursor', 'pointer')
-        .on('mouseenter', function () {
+        .on('pointerenter', function () {
           const ht = d3.transition().duration(180).ease(d3.easeCubicOut);
           if (highlightedTeamRef.current) {
             if (team.triCode !== highlightedTeamRef.current) {
@@ -159,7 +159,7 @@ export function LineChart({ teams, scrubDate, highlightedTeam, onScrub, showXAxi
           linesG.selectAll(`.line-${team.triCode}`).transition(ht).attr('opacity', C.opacity.lineHighlighted).attr('stroke-width', C.line.widthHighlighted);
           d3.select(this).raise();
         })
-        .on('mouseleave', function () {
+        .on('pointerleave', function () {
           const ht = d3.transition().duration(180).ease(d3.easeCubicOut);
           if (highlightedTeamRef.current) {
             if (team.triCode !== highlightedTeamRef.current) {
@@ -197,7 +197,8 @@ export function LineChart({ teams, scrubDate, highlightedTeam, onScrub, showXAxi
     g.append('rect')
       .attr('width', width).attr('height', height)
       .attr('fill', 'transparent')
-      .on('mousemove', function (event) {
+      .style('touch-action', 'none')
+      .on('pointermove', function (event) {
         const [mx] = d3.pointer(event);
         const target = xScaleRef.current!.invert(mx).getTime();
         const nearest = visibleDatesRef.current.reduce((best, d) =>

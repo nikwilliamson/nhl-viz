@@ -26,9 +26,8 @@ interface Props {
   dateRange: [string, string];
 }
 
-const MARGIN_BASE = { top: 20, right: 30, left: 44 };
-const LOGO_SIZE = 18;
-const LOGO_GAP  = 4;
+const LOGO_SIZE = C.logo.size;
+const LOGO_GAP  = C.logo.gap;
 
 export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScrub, onHighlight, onHover, showXAxis = true, dateRange }: Props) {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -50,6 +49,7 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
   const xAxisGroupRef = useRef<SVGGElement | null>(null);
   const linesGRef = useRef<SVGGElement | null>(null);
   const logosGRef = useRef<SVGGElement | null>(null);
+  const logosLeftGRef = useRef<SVGGElement | null>(null);
   const visibleDatesRef = useRef<string[]>([]);
 
   const allDates = useCallback(() => {
@@ -79,7 +79,8 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
 
     rankFieldRef.current = rankField;
 
-    const MARGIN = { ...MARGIN_BASE, bottom: showXAxis ? 36 : 8 };
+    const m = C.margin.bump;
+    const MARGIN = { top: m.top, right: m.right, left: m.left, bottom: showXAxis ? m.bottomAxis : m.bottomNoAxis };
 
     const svg = d3.select(svgRef.current);
     svg.selectAll('*').remove();
@@ -172,6 +173,9 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
     const logosG = g.append('g').attr('class', 'team-end-logos');
     logosGRef.current = logosG.node();
 
+    const logosLeftG = g.append('g').attr('class', 'team-start-logos');
+    logosLeftGRef.current = logosLeftG.node();
+
     teams.forEach(team => {
       const color = teamStyles[team.triCode]?.primaryColor ?? C.color.teamFallback;
       const baseOpacity = highlightedTeamRef.current
@@ -234,6 +238,21 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
             .attr('height', LOGO_SIZE)
             .attr('opacity', baseOpacity);
         }
+
+        // Logo at left start of line
+        const firstPt = visibleData[0];
+        const firstRank = getY(firstPt);
+        if (firstRank != null) {
+          logosLeftG.append('image')
+            .datum(team.triCode)
+            .attr('class', `team-start-logo team-start-logo-${team.triCode}`)
+            .attr('href', `${import.meta.env.BASE_URL}img/${team.triCode}/${team.triCode}_light.svg`)
+            .attr('x', -(LOGO_SIZE + LOGO_GAP))
+            .attr('y', yScale(firstRank) - LOGO_SIZE / 2)
+            .attr('width', LOGO_SIZE)
+            .attr('height', LOGO_SIZE)
+            .attr('opacity', baseOpacity);
+        }
       }
     });
 
@@ -255,7 +274,8 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
     g.append('rect')
       .attr('width', width).attr('height', height)
       .attr('fill', 'transparent')
-      .on('mousemove', function (event) {
+      .style('touch-action', 'none')
+      .on('pointermove', function (event) {
         const [mx, my] = d3.pointer(event);
         const target = xScaleRef.current!.invert(mx).getTime();
         const nearest = visibleDatesRef.current.reduce((best, d) =>
@@ -281,32 +301,37 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
           const ht = d3.transition().duration(120).ease(d3.easeCubicOut);
           const linesG = d3.select(svgRef.current!).select('.lines');
           const logosG = d3.select(svgRef.current!).select('.team-end-logos');
+          const logosLeftG = d3.select(svgRef.current!).select('.team-start-logos');
           const prev = prevHoveredTeamRef.current;
           if (prev && prev !== closestTeam && prev !== highlightedTeamRef.current) {
             linesG.selectAll(`.line-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
             linesG.selectAll(`.bump-dot-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
             logosG.selectAll(`.team-end-logo-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
+            logosLeftG.selectAll(`.team-start-logo-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
           }
           if (closestTeam && closestTeam !== highlightedTeamRef.current) {
             linesG.selectAll(`.line-${closestTeam}`).transition(ht).attr('opacity', C.opacity.lineHoverActive);
             linesG.selectAll(`.bump-dot-${closestTeam}`).transition(ht).attr('opacity', C.opacity.lineHoverActive);
             logosG.selectAll(`.team-end-logo-${closestTeam}`).transition(ht).attr('opacity', C.opacity.lineHoverActive);
+            logosLeftG.selectAll(`.team-start-logo-${closestTeam}`).transition(ht).attr('opacity', C.opacity.lineHoverActive);
           }
           prevHoveredTeamRef.current = closestTeam;
         }
 
         onHoverRef.current(closestTeam);
       })
-      .on('mouseleave', function () {
+      .on('pointerleave', function () {
         if (highlightedTeamRef.current) {
           const prev = prevHoveredTeamRef.current;
           if (prev && prev !== highlightedTeamRef.current) {
             const ht = d3.transition().duration(120).ease(d3.easeCubicOut);
             const linesG = d3.select(svgRef.current!).select('.lines');
             const logosG = d3.select(svgRef.current!).select('.team-end-logos');
+            const logosLeftG = d3.select(svgRef.current!).select('.team-start-logos');
             linesG.selectAll(`.line-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
             linesG.selectAll(`.bump-dot-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
             logosG.selectAll(`.team-end-logo-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
+            logosLeftG.selectAll(`.team-start-logo-${prev}`).transition(ht).attr('opacity', C.opacity.lineDimmed);
           }
           prevHoveredTeamRef.current = null;
         }
@@ -393,7 +418,7 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
       .transition(t)
       .attr('cx', date => xScaleRef.current!(parseDate(date)));
 
-    // Transition logo y positions
+    // Transition right logo y positions
     if (logosGRef.current) {
       d3.select(logosGRef.current)
         .selectAll<SVGImageElement, string>('.team-end-logo')
@@ -407,6 +432,24 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
           const rank = rf === 'wildcardRank'
             ? lastPt.wildcardRank
             : (lastPt as unknown as Record<string, number>)[rf];
+          return rank ? yScaleRef.current!(rank) - LOGO_SIZE / 2 : 0;
+        });
+    }
+
+    // Transition left logo y positions
+    if (logosLeftGRef.current) {
+      d3.select(logosLeftGRef.current)
+        .selectAll<SVGImageElement, string>('.team-start-logo')
+        .transition(t)
+        .attr('y', triCode => {
+          const team = teams.find(tm => tm.triCode === triCode);
+          if (!team) return 0;
+          const visibleData = team.data.filter(d => d.date >= rangeStart && d.date <= rangeEnd);
+          if (!visibleData.length) return 0;
+          const firstPt = visibleData[0];
+          const rank = rf === 'wildcardRank'
+            ? firstPt.wildcardRank
+            : (firstPt as unknown as Record<string, number>)[rf];
           return rank ? yScaleRef.current!(rank) - LOGO_SIZE / 2 : 0;
         });
     }
@@ -455,6 +498,7 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
 
     const linesG = d3.select(svgRef.current).select('.lines');
     const logosG = d3.select(svgRef.current).select('.team-end-logos');
+    const logosLeftG = d3.select(svgRef.current).select('.team-start-logos');
     const t = d3.transition().duration(180).ease(d3.easeCubicOut);
     if (highlightedTeam) {
       linesG.selectAll('.line').transition(t).attr('opacity', C.opacity.lineDimmed).attr('stroke-width', C.line.widthDimmed);
@@ -464,10 +508,13 @@ export function BumpChart({ teams, scrubDate, highlightedTeam, rankField, onScru
       linesG.select(`.team-group-${highlightedTeam}`).raise();
       logosG.selectAll('.team-end-logo').transition(t).attr('opacity', C.opacity.lineDimmed);
       logosG.selectAll(`.team-end-logo-${highlightedTeam}`).transition(t).attr('opacity', C.opacity.lineHighlighted);
+      logosLeftG.selectAll('.team-start-logo').transition(t).attr('opacity', C.opacity.lineDimmed);
+      logosLeftG.selectAll(`.team-start-logo-${highlightedTeam}`).transition(t).attr('opacity', C.opacity.lineHighlighted);
     } else {
       linesG.selectAll('.line').transition(t).attr('opacity', C.opacity.lineDefault).attr('stroke-width', C.line.widthDefault);
       linesG.selectAll('.bump-dot').transition(t).attr('opacity', C.opacity.lineDefault);
       logosG.selectAll('.team-end-logo').transition(t).attr('opacity', C.opacity.lineDefault);
+      logosLeftG.selectAll('.team-start-logo').transition(t).attr('opacity', C.opacity.lineDefault);
     }
 
     if (!scrubRef.current || !xScaleRef.current || !yScaleRef.current) return;
