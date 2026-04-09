@@ -44,9 +44,7 @@ function processFile(filePath) {
     }
 
     const wcSeq = t.wildcardSequence ?? 0;
-    // Division leaders (wcSeq === 0) use their conference rank (1–6);
-    // wildcard pool teams (wcSeq > 0) follow after the 6 division leaders.
-    const wildcardRank = wcSeq === 0 ? t.conferenceSequence : 6 + wcSeq;
+    const wildcardRank = t.conferenceSequence;
 
     teamMap[triCode].data.push({
       date,
