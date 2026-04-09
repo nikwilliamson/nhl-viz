@@ -232,7 +232,7 @@ function TeamRowItem({
         <span className="team-rank">{rankLabel}</span>
         <span className="team-logo-wrap">
           <img
-            src={`/src/assets/img/${triCode}/${triCode}_light.svg`}
+            src={`${import.meta.env.BASE_URL}img/${triCode}/${triCode}_light.svg`}
             alt={name}
             className="team-logo"
           />
