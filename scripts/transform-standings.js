@@ -28,6 +28,23 @@ function processFile(filePath) {
   const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   const date = raw.standings[0]?.date ?? path.basename(filePath, '.json');
 
+  // Build per-conference relative rank for division leaders (wcSeq === 0).
+  // There are exactly 6 division leaders per conference (top 3 from each of
+  // the 2 divisions). Rank them 1–6 by conference sequence so they always
+  // occupy slots 1–6 in the wildcard view, with the wildcard pool at 7–16.
+  const confLeaderRank = new Map(); // triCode -> wildcardRank
+  const byConf = {};
+  for (const t of raw.standings) {
+    if ((t.wildcardSequence ?? 0) === 0) {
+      (byConf[t.conferenceName] ??= []).push(t);
+    }
+  }
+  for (const leaders of Object.values(byConf)) {
+    leaders
+      .sort((a, b) => a.conferenceSequence - b.conferenceSequence)
+      .forEach((t, i) => confLeaderRank.set(t.teamAbbrev.default, i + 1));
+  }
+
   for (const t of raw.standings) {
     const triCode = t.teamAbbrev.default;
 
@@ -44,7 +61,8 @@ function processFile(filePath) {
     }
 
     const wcSeq = t.wildcardSequence ?? 0;
-    const wildcardRank = t.conferenceSequence;
+    // Division leaders get relative rank 1–6; wildcard pool follows at 7–16.
+    const wildcardRank = wcSeq === 0 ? confLeaderRank.get(triCode) : 6 + wcSeq;
 
     teamMap[triCode].data.push({
       date,
