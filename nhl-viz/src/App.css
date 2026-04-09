@@ -1,0 +1,323 @@
+/* ── Reset & root layout ────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+  background: #0f1117;
+  color: #e2e4e9;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+/* ── Loading ────────────────────────────────────────────── */
+.loading {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+/* ── Main layout ────────────────────────────────────────── */
+.standings-viz {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.chart-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px 16px 20px;
+  min-width: 0;
+}
+
+.table-pane {
+  width: 320px;
+  flex-shrink: 0;
+  border-left: 1px solid #1e2028;
+  overflow-y: auto;
+  padding-bottom: 24px;
+}
+
+/* ── Line chart ─────────────────────────────────────────── */
+.chart-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-shrink: 0;
+}
+
+.chart-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.play-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #2a2d38;
+  background: #161820;
+  color: #888;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+  line-height: 1;
+  padding: 0;
+
+  &:hover {
+    border-color: #4a4d5c;
+    color: #ccc;
+    background: #1e2028;
+  }
+
+  &.playing {
+    border-color: #3a5a3a;
+    color: #5a9a5a;
+    background: rgba(90, 154, 90, 0.08);
+  }
+}
+
+.chart-tabs {
+  display: flex;
+  gap: 2px;
+  background: #0d0f14;
+  border: 1px solid #1e2028;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.chart-tab {
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  color: #444;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+
+  &:hover { color: #888; }
+
+  &.active {
+    background: #1e2028;
+    color: #ccc;
+  }
+}
+
+.line-chart-svg {
+  flex: 1;
+  width: 100%;
+  display: block;
+}
+
+/* ── Stacked chart layout (Rankings: Conference / Division) ─ */
+.chart-stack {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.chart-stack-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  position: relative;
+
+  & + .chart-stack-item {
+    border-top: 1px solid #151720;
+  }
+}
+
+.chart-stack-label {
+  position: absolute;
+  top: 6px;
+  left: 48px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #2a2d38;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Rank field toggle (Rankings tab header) ────────────── */
+.rank-toggle {
+  display: flex;
+  gap: 2px;
+  margin-left: auto;
+}
+
+.rank-btn {
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #333;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+
+  &:hover { color: #666; }
+
+  &.active {
+    color: #888;
+    border-color: #2a2d38;
+  }
+}
+
+/* ── Standings table ────────────────────────────────────── */
+.standings-table {
+  padding: 16px 0;
+}
+
+.standings-date {
+  padding: 0 16px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #1a1c24;
+  margin-bottom: 4px;
+}
+
+.conf-section {
+  margin-bottom: 8px;
+}
+
+.conf-header {
+  padding: 10px 16px 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.division-section {
+  margin-bottom: 2px;
+}
+
+.division-header {
+  padding: 6px 16px 3px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #383b47;
+}
+
+.wildcard-header {
+  color: #3a3d4a;
+  padding-top: 8px;
+}
+
+/* ── Team row ───────────────────────────────────────────── */
+.team-row {
+  display: grid;
+  grid-template-columns: 28px 22px 36px 1fr 28px 32px;
+  align-items: center;
+  gap: 2px;
+  padding: 3px 16px 3px 12px;
+  transition: background 0.1s;
+  cursor: default;
+}
+
+.team-row:hover {
+  background: #161820;
+}
+
+.team-row--wc {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.team-row--eliminated {
+  /* opacity: 0.35; */
+}
+
+.team-row--playoff {
+  box-shadow: inset 2px 0 0 rgba(100, 220, 140, 0.45);
+}
+
+.team-row--highlighted {
+  background: rgba(255, 255, 255, 0.05) !important;
+  opacity: 1 !important;
+}
+
+.team-rank {
+  font-size: 10px;
+  color: #444;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.team-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-logo {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+.team-abbrev {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.team-record {
+  font-size: 10px;
+  color: #4a4d5c;
+  font-variant-numeric: tabular-nums;
+}
+
+.team-pts {
+  font-size: 12px;
+  font-weight: 700;
+  color: #c8cad4;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.team-diff {
+  font-size: 10px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: #3a3d4a;
+
+  &.pos { color: #3a7d54; }
+  &.neg { color: #7d3a3a; }
+}
+
+/* ── Playoff cutoff line ────────────────────────────────── */
+.playoff-line {
+  height: 1px;
+  margin: 3px 16px 3px 12px;
+  background: linear-gradient(to right, transparent, #2a2d38 20%, #2a2d38 80%, transparent);
+}
