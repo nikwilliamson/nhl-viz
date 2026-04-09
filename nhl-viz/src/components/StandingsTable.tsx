@@ -187,10 +187,6 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam,
           .filter(r => !divisionLeaders.has(r.triCode))
           .sort((a, b) => a.snap.conferenceRank - b.snap.conferenceRank || b.snap.points - a.snap.points);
 
-        const wc1 = wildcardPool[0];
-        const wc2 = wildcardPool[1];
-        const confInPlayoffs = new Set([...divisionLeaders, wc1?.triCode, wc2?.triCode].filter(Boolean));
-
         return (
           <div key={conf} className="conf-section">
             <div className="conf-header">{conf} Conference</div>
@@ -208,7 +204,7 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam,
                       key={row.triCode}
                       row={row}
                       rankLabel={`${i + 1}`}
-                      inPlayoffs={true}
+                      inPlayoffs={inPlayoffsSet.has(row.triCode)}
                       isHighlighted={highlightedTeam === row.triCode}
                       isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
                       onClick={() => onHighlight(row.triCode)}
@@ -223,14 +219,15 @@ export function StandingsTable({ teams, scrubDate, highlightedTeam, hoveredTeam,
               {wildcardPool.map((row, i) => {
                 const isWC = i < 2;
                 const rankLabel = i === 0 ? 'WC1' : i === 1 ? 'WC2' : '–';
+                const inPlayoffs = inPlayoffsSet.has(row.triCode);
                 return (
                   <TeamRowItem
                     key={row.triCode}
                     row={row}
                     rankLabel={rankLabel}
-                    inPlayoffs={confInPlayoffs.has(row.triCode)}
+                    inPlayoffs={inPlayoffs}
                     isWildcard={isWC}
-                    isEliminated={!confInPlayoffs.has(row.triCode)}
+                    isEliminated={!inPlayoffs}
                     isHighlighted={highlightedTeam === row.triCode}
                     isDimmed={!!hoveredTeam && hoveredTeam !== row.triCode}
                     showPlayoffLine={i === 1}
