@@ -1,9 +1,9 @@
 {
   "wildCardIndicator": true,
-  "standingsDateTimeUtc": "2026-04-09T17:07:36Z",
+  "standingsDateTimeUtc": "2026-04-10T15:59:01Z",
   "standings": [
     {
-      "clinchIndicator": "z",
+      "clinchIndicator": "p",
       "conferenceAbbrev": "W",
       "conferenceHomeSequence": 1,
       "conferenceL10Sequence": 1,
@@ -648,6 +648,7 @@
       "wins": 45
     },
     {
+      "clinchIndicator": "x",
       "conferenceAbbrev": "E",
       "conferenceHomeSequence": 9,
       "conferenceL10Sequence": 7,

@@ -110,7 +110,10 @@ const output = {
   generated: new Date().toISOString().slice(0, 10),
   dryRun: isDryRun,
   datesProcessed: files.length,
-  dateRange: { start: files[0], end: files.at(-1) },
+  dateRange: {
+    start: files[0].replace('.json', ''),
+    end: files.at(-1).replace('.json', ''),
+  },
   teamCount: teams.length,
   teams,
 };

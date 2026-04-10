@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "fetch-standings": "node scripts/fetch-standings.js",
+    "fetch-logos": "node scripts/fetch-logos.js",
+    "transform-standings": "node scripts/transform-standings.js",
+    "transform-standings:limit": "node scripts/transform-standings.js --limit",
+    "test-wildcard": "node scripts/test-wildcard.js"
+  }
+}

@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = path.join(__dirname, '..', 'data', 'standings');
 
 const START_DATE = '2025-10-07';
-const END_DATE = '2026-04-16';
+const END_DATE = new Date().toISOString().slice(0, 10);
 
 function generateDates(start, end) {
   const dates = [];
